@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG WEB</title>
+    <style>
+        body {
+            background: white;
+            margin: 0%;
+        }
+        .header {
+            /*min-height: 40px;*/
+            width: 100%;
+            /*background: #69d2e7;*/
+            overflow: hidden;
+        }
+        .header-logo {
+            /*background: #e0e4cc;*/
+            width: 20%;
+            /*min-height: 150px;*/
+            float: left;
+            text-align: center;
+            vertical-align: middle;
+            margin-top: 10px;
+        }
+        .header-navigation {
+            /*background: #f38630;*/
+            width: 50%;
+            min-height: 30px;
+            float: right; 
+            vertical-align: middle;
+        }
+
+        .header-navigation li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .header-navigation ul a {
+            text-decoration: none;
+            color: rgb(13, 98, 155);
+            font-family: myFonts;
+            font-size: 20px;
+        }
+
+        .header-navigation ul a:hover {
+            color: rgb(141, 134, 139);
+        }
+
+        .contents {
+            min-height: 450px;
+            /*background: #0b486b;*/
+            margin: 10px;
+            padding: 10px;
+            overflow: hidden;
+        }
+        .article-content {
+            width: 65%;
+            background: white;
+            min-height: 500px;
+            float: left;
+            margin: 0 5px 5px 5px;
+        }
+        .sidebar-content {
+            width: 25%;
+            background: white;
+            min-height: 500px;
+            float: left;
+        }
+        .footer {
+            /*background-color: #0b486b;*/
+            color: white;
+            min-height: 100px;
+        }
+
+        .title-content {
+            color: rgb(8, 101, 158);
+            font-family: myFonts;
+        }
+
+        @font-face {
+            font-family: myFonts;
+            src: url(static/OpenSans/OpenSans-LightItalic.ttf);
+        }
+        .widget {
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: rgb(197, 197, 197) 0 2px 13px 1px;
+        }
+        .widget-title {
+            font-size: 20px;
+            color: white;
+            border-bottom: 1px white solid;
+        }
+
+        .widget-content ul {
+            list-style: none;
+        }
+
+        .widget-content li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .web-color {
+            color: rgb(8, 101, 158);
+        }
+
+        .web-font {
+            font-family: myFonts;
+        }
+
+        .shadow {
+            box-shadow: grey 0 0 13px 1px;
+        }
+
+        .bg-gradient-blue {
+            background-image: linear-gradient(to bottom right, rgb(8, 101, 158), rgb(184, 213, 231));
+        }
+    </style>
+</head>
+<body>
+    <div class="header shadow">
+        <div class="header-logo">
+            <img src="images/LOGO.PNG" alt="logo" width="200">
+        </div>
+        <div class="header-navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+        </div>
+        <marquee class="web-color web-font">:: Selamat datang di web blog pribadi ::</marquee>
+    </div>
+    <div class="contents">
+        <div class="article-content">
+            <h2 class="title-content">Selamat Datang Di website</h2>
+        </div>
+        <div class="sidebar-content">
+            <div class="widget bg-gradient-blue">
+                <div class="widget-title web-font">Kategori</div>
+                <div class="widget-content web-font">
+                    <ul>
+                        <li><a href="#">Front end</a></li>
+                        <li><a href="#">Back end</a></li>
+                        <li><a href="#">Andoid Studio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
